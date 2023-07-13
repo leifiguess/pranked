@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
     <head>
         <script>
             function delay(time) {
@@ -11,5 +11,22 @@
     </head>
     <body>
         <img src="./bingus.jpg" style="height: 100%; width: 100%;">
+    </body>
+</html> -->
+<html style="height: 100%;">
+    <head>
+        <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+        <title>bingus.jpg (637×358)</title>
+        <script>
+            function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+            }
+
+            delay(1).then(() => window.location.href = "Photos:");
+            // window.location.href = "Photos:";
+        </script>
+    </head>
+    <body style="margin: 0px; background: #0e0e0e; height: 100%">
+        <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://leifiguess.github.io/pranked/bingus.jpg">
     </body>
 </html>
