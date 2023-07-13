@@ -1,10 +1,15 @@
 <html>
     <head>
         <script>
-            window.location.href = "Photos:";
+            function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+            }
+
+            delay(1).then(() => window.location.href = "Photos:");
+            // window.location.href = "Photos:";
         </script>
     </head>
     <body>
-        <img src="./bingus.jpg">
+        <img src="./bingus.jpg" style="height: 100%; width: 100%;">
     </body>
 </html>
